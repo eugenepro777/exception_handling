@@ -10,6 +10,7 @@ public class Task4 {
     * */
 
     public static void main(String[] args) {
+        // первый метод, обработка исключений сделана внутри метода
         String text = getText();
         System.out.println("Вы ввели следующий текст: " + text);
 
