@@ -46,7 +46,7 @@ public class Application {
             writer.writeData(person);
         } catch (InvalidDataException e) {
             System.out.println("Ошибка: " + e.getMessage());
-        } catch (IOException e) {
+        } catch (WriteInFileException e) {
             e.printStackTrace();
         }
     }

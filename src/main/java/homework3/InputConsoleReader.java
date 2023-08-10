@@ -71,7 +71,6 @@ public class InputConsoleReader implements InputReader {
 
     private static int validateLengthData(String[] array) {
         int minLength = 6;
-
         if (array.length < minLength) {
             return -1;
         }

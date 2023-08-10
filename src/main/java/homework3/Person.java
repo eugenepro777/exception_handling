@@ -12,7 +12,7 @@ public class Person {
     private long phoneNumber;
     private Gender gender;
 
-    public Person(String lastName, String firstName, String patronomic,
+    public Person(String lastname, String firstname, String patronomic,
                   LocalDate dateOfBirth, long phoneNumber, Gender gender) {
         this.lastname = lastname;
         this.firstname = firstname;

@@ -4,5 +4,5 @@ import java.io.IOException;
 
 public interface PersonFileWriter {
 
-    void writeData(Person personData) throws IOException;
+    void writeData(Person personData) throws WriteInFileException;
 }
