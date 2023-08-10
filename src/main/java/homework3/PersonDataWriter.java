@@ -22,5 +22,5 @@ public class PersonDataWriter implements PersonFileWriter {
         }
         System.out.println("Данные успешно записаны в файл: " + fileName);
     }
-    }
 }
+

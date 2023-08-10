@@ -29,10 +29,26 @@ package homework3;
 пользователь должен увидеть стектрейс ошибки.
 */
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Application {
 
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        InputReader reader = new InputConsoleReader(scanner);
+        PersonFileWriter writer = new PersonDataWriter();
+
+        try {
+            Person person = reader.readPersonData();
+            writer.writeData(person);
+        } catch (InvalidDataException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
